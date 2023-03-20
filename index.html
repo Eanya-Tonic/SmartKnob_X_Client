@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <title>SmartKnobX</title>
+</head>
+
+<body>
+    <div class="box">
+        <div id="page1" class="page open" style="--b:rgba(100,100,100,0.2)">
+            <img src="./img/knob.png" id="knob">
+            <p id="tips1">连接到您的SmartKnob</p>
+            <div class="btn-box">
+                <span>连接</span>
+                <input type="text" placeholder="输入IP地址" />
+            </div>
+        </div>
+        <div id="page2" class="page close" style="--b:rgba(0,102,255,0.2)">
+            <p id="tips2">调整SmartKnob的功能</p>
+            <div class="select-menu">
+                <div class="select">
+                    <span>选择功能</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                    <div class="option">音量控制</div>
+                    <div class="option">滚动控制</div>
+                    <div class="option">媒体控制</div>
+                </div>
+            </div>
+            <div class="main">
+                <a href="#" class="up">确认</a>
+            </div>
+        </div>
+        <div id="page3" class="page close" style="--b:rgba(85,0,255,0.2)">
+            <div class="wrapper">
+                <p id="tips3">设定SmartKnob的参数</p>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>设备名</label>
+                </div>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>用户名</label>
+                </div>
+                <div class="main1">
+                    <a href="#" class="up">确认</a>
+                </div>
+            </div>
+        </div>
+        <div id="page4" class="page close" style="--b:rgba(255,0,0,0.2)">
+            <div class="wrapper">
+                <p id="tips3">设定MQTT的参数</p>
+                <div class="input-data1">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>MQTT用户名</label>
+                </div>
+                <div class="input-data1">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>MQTT密码</label>
+                </div>
+                <div class="input-data1">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>MQTT服务器</label>
+                </div>
+                <div class="input-data1">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label>MQTT端口</label>
+                </div>
+                <div class="main2">
+                    <a href="#" class="up">确认</a>
+                </div>
+            </div>
+        </div>
+        <div id="page5" class="page close" style="--b:rgba(85,255,0,0.2)">
+            <div class="container">
+                <div class="card card-1">
+                    <div class="img">
+                        <img src="./img/logo.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">关于SmartKnob X</div>
+                        <div class="text">
+                            特别感谢scottbez1/smartknob、SmallPond/X-Knob、FASTSHIFT/X-TRACK等开源社区大佬的项目，可以说没有前人做出的基础也不会有现在的SmartKnob X。很高兴看到SmartKnob X也可以为开源社区做出自己的一份贡献。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="top:68%;">
+                <div class="card card-1">
+                    <div class="img">
+                        <img src="./img/avata.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">关于开发者</div>
+                        <div class="text">
+                            <b>Eanya-Tonic</b>
+                            <br><br>
+                            普普通通的学生一名，不完全算是计算机专业，但没事也喜欢写点代码。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="nav">
+            <ul>
+                <li class="checked" style="--b:rgba(55,55,55,0.2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+                        <path
+                            d="M9.5 32.208h5.167V21.583h10.708v10.625H30.5v-15.75L20 8.583 9.5 16.417Zm0 3.5q-1.5 0-2.5-1t-1-2.5v-15.75q0-.833.354-1.562.354-.729 1.021-1.229l10.5-7.917q.5-.333 1.042-.5.541-.167 1.083-.167.542 0 1.083.167.542.167 1.042.5l10.5 7.917q.667.5 1.021 1.229.354.729.354 1.562v15.75q0 1.5-1 2.5t-2.5 1h-8.625V25.083h-3.708v10.625ZM20 20.375Z" />
+                    </svg>
+                    <span>主页</span>
+                </li>
+                <li class="no-checked" style="--b:rgba(0,102,255,0.2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+                        <path
+                            d="M6.208 32.167q-.75 0-1.25-.521t-.5-1.229q0-.75.5-1.25t1.25-.5h7.709q.708 0 1.208.521.5.52.5 1.229 0 .708-.5 1.229-.5.521-1.208.521Zm0-20.834q-.75 0-1.25-.52-.5-.521-.5-1.23 0-.75.5-1.25t1.25-.5h14.167q.708 0 1.229.521.521.521.521 1.229 0 .709-.521 1.23-.521.52-1.229.52Zm13.417 24.25q-.75 0-1.25-.521-.5-.52-.5-1.229v-6.875q0-.708.5-1.229.5-.521 1.25-.521.708 0 1.229.521.521.521.521 1.229v1.709h12.417q.708 0 1.229.521.521.52.521 1.229 0 .708-.521 1.229-.521.521-1.229.521H21.375v1.666q0 .709-.521 1.229-.521.521-1.229.521Zm-5.75-10.416q-.708 0-1.229-.521-.521-.521-.521-1.229V21.75H6.208q-.75 0-1.25-.521T4.458 20q0-.708.5-1.229.5-.521 1.25-.521h5.917V16.5q0-.708.521-1.208t1.271-.5q.708 0 1.208.5t.5 1.208v6.917q0 .708-.5 1.229-.5.521-1.25.521Zm5.75-3.417q-.75 0-1.25-.521t-.5-1.229q0-.708.5-1.229.5-.521 1.25-.521h14.167q.708 0 1.229.521.521.521.521 1.229 0 .708-.521 1.229-.521.521-1.229.521Zm6.458-7q-.708 0-1.229-.5-.521-.5-.521-1.208V6.167q0-.709.521-1.229.521-.521 1.229-.521.709 0 1.229.521.521.52.521 1.229v1.666h5.959q.708 0 1.229.521.521.521.521 1.229 0 .709-.521 1.23-.521.52-1.229.52h-5.959v1.709q0 .708-.521 1.208-.52.5-1.229.5Z" />
+                    </svg>
+                    <span>调整</span>
+                </li>
+                <li class="no-checked" style="--b:rgba(85,0,255,0.2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+                        <path
+                            d="M23.208 37.542h-6.416q-.667 0-1.167-.396t-.542-1.063l-.625-4q-.541-.25-1.187-.604t-1.146-.729l-3.75 1.625q-.583.333-1.229.083-.646-.25-.979-.833l-3.209-5.75q-.375-.583-.208-1.208t.708-1l3.292-2.459q-.042-.291-.062-.646-.021-.354-.021-.645 0-.292.021-.625.02-.334.062-.625l-3.292-2.375q-.583-.375-.708-1.042t.208-1.208l3.209-5.709q.375-.583.979-.812.604-.229 1.229.062L12 9.208q.5-.375 1.188-.77.687-.396 1.27-.605l.625-4q.042-.666.542-1.062t1.167-.396h6.416q.667 0 1.167.396t.583 1.062l.584 4q.583.25 1.27.625.688.375 1.188.75l3.625-1.625q.583-.291 1.229-.062.646.229.979.812L37.042 14q.333.583.187 1.25-.146.667-.646 1.042l-3.375 2.375q.042.291.063.666.021.375.021.667 0 .292-.021.646-.021.354-.021.646l3.25 2.375q.542.416.688 1.041.145.625-.188 1.209l-3.208 5.75q-.334.583-.98.812-.645.229-1.229-.104l-3.708-1.625q-.5.333-1.125.729-.625.396-1.167.563l-.625 4.041q-.083.667-.583 1.063-.5.396-1.167.396Zm-3.25-11.25q2.625 0 4.48-1.854 1.854-1.855 1.854-4.48 0-2.625-1.854-4.479-1.855-1.854-4.48-1.854-2.625 0-4.479 1.854t-1.854 4.479q0 2.625 1.854 4.48 1.854 1.854 4.479 1.854Zm0-3.5q-1.208 0-2.02-.834-.813-.833-.813-2 0-1.208.833-2.02.834-.813 2-.813 1.167 0 2 .833.834.834.834 2 0 1.167-.834 2-.833.834-2 .834ZM20 19.958Zm-1.792 14.084h3.542l.625-4.625q1.375-.334 2.583-1.021 1.209-.688 2.25-1.688l4.25 1.834 1.667-2.959-3.75-2.833q.167-.625.292-1.354.125-.729.125-1.438 0-.75-.104-1.416-.105-.667-.271-1.417l3.708-2.75-1.625-2.958-4.292 1.791q-.958-1.041-2.187-1.77-1.229-.73-2.688-1.021l-.5-4.542h-3.666l-.5 4.542q-1.5.333-2.75 1.062-1.25.729-2.167 1.729l-4.208-1.791-1.709 2.958 3.709 2.792q-.167.75-.271 1.416-.104.667-.104 1.334 0 .666.104 1.354.104.687.271 1.521l-3.709 2.791L8.5 28.542l4.292-1.875q1.083 1.083 2.291 1.771 1.209.687 2.584 1.02Z" />
+                    </svg>
+                    <span>设定</span>
+                </li>
+                <li class="no-checked" style="--b:rgba(255,0,0,0.2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+                        <path
+                            d="M8.917 30.542q1.791 0 3.062-1.271t1.271-3.104q0-1.25-.708-2.417-.709-1.167-2.209-1.667l-.416-.25V9.75q0-.417-.292-.729-.292-.313-.75-.313-.417 0-.708.313-.292.312-.292.729v12.083l-.375.25q-1.542.5-2.25 1.646t-.708 2.479q0 1.834 1.27 3.084 1.271 1.25 3.105 1.25Zm0 3.5q-3.334 0-5.605-2.271-2.27-2.271-2.27-5.563 0-1.958.916-3.708.917-1.75 2.417-2.792V9.75q0-1.875 1.313-3.208Q7 5.208 8.917 5.208q1.833 0 3.166 1.355 1.334 1.354 1.334 3.187v9.958q1.5 1.042 2.416 2.771.917 1.729.917 3.729 0 3.209-2.312 5.521-2.313 2.313-5.521 2.313Zm14.208-9.75q-2-1.375-3.417-3.646-1.416-2.271-1.416-5.063 0-4.291 3.02-7.333 3.021-3.042 7.313-3.042Q33 5.208 36 8.229t3 7.354q0 2.792-1.396 5.042t-3.437 3.667Zm1.208-3.5H33q1.083-.917 1.792-2.334.708-1.416.708-2.875 0-2.875-2-4.875t-4.875-2q-2.792 0-4.813 2.021-2.02 2.021-2.02 4.854 0 1.459.729 2.875.729 1.417 1.812 2.334Zm4.334 13.25q-1.042 0-1.75-.667-.709-.667-.834-1.625h5.125q-.125 1-.833 1.646-.708.646-1.708.646Zm-5.125-3.709v-3.5h10.166v3.5ZM8.917 26.167Zm19.75-11.417Z" />
+                    </svg>
+                    <span>物联</span>
+                </li>
+                <li class="no-checked" style="--b:rgba(85,255,0,0.2)">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40">
+                        <path
+                            d="M20.125 28.792q.708 0 1.229-.521.521-.521.521-1.271v-6.958q0-.709-.521-1.209-.521-.5-1.229-.5-.75 0-1.25.5t-.5 1.25v6.959q0 .75.521 1.25t1.229.5ZM20 14.708q.75 0 1.25-.479t.5-1.229q0-.75-.5-1.271-.5-.521-1.25-.521t-1.25.5q-.5.5-.5 1.25 0 .792.5 1.271.5.479 1.25.479Zm0 22.834q-3.667 0-6.896-1.354-3.229-1.355-5.583-3.709t-3.709-5.583Q2.458 23.667 2.458 20t1.354-6.896q1.355-3.229 3.73-5.583t5.583-3.708Q16.333 2.458 20 2.458t6.896 1.355q3.229 1.354 5.583 3.708t3.709 5.583q1.354 3.229 1.354 6.896 0 3.708-1.354 6.896-1.355 3.187-3.709 5.562-2.354 2.375-5.583 3.73-3.229 1.354-6.896 1.354ZM20 20Zm0 14.042q5.792 0 9.917-4.104 4.125-4.105 4.125-9.938 0-5.792-4.125-9.917T20 5.958q-5.833 0-9.938 4.125Q5.958 14.208 5.958 20q0 5.833 4.104 9.938 4.105 4.104 9.938 4.104Z" />
+                    </svg>
+                    <span>关于</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        let lis = document.getElementById("nav").children[0].children;
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].setAttribute("onclick", "openPage(" + i + ")")
+        }
+
+        function openPage(index) {
+            for (let i = 0; i < lis.length; i++) {
+                if (lis[i] === lis[index]) {
+                    document.getElementById("page" + (i + 1)).classList.replace("close", "open");
+                    lis[i].classList.replace("no-checked", "checked");
+                } else {
+                    document.getElementById("page" + (i + 1)).classList.replace("open", "close");
+                    lis[i].classList.replace("checked", "no-checked");
+                }
+            }
+        }
+    </script>
+    <script>
+        const select = document.querySelector(".select");
+        const options_list = document.querySelector(".options-list");
+        const options = document.querySelectorAll(".option");
+
+        //show & hide options list
+        select.addEventListener("click", () => {
+            options_list.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        //select option
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+                options_list.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+        });
+    </script>
+</body>
+
+</html>
