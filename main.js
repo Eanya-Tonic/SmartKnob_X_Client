@@ -13,11 +13,7 @@ function createWindow() {
     width: 900,
     height: 700,
     minwidth: 900,
-    minheight: 700,
-    webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-    }
-  })
+    minheight: 700,})
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html');
